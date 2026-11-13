@@ -1,0 +1,17 @@
+node_modules/
+dist/
+coverage/
+*.lcov
+*.log
+*.tsbuildinfo
+.cache/
+.idea/
+.DS_Store
+.env*
+!.env.example
+tunnels.json
+cert.pem
+*.pem
+*.key
+
+# panel/main.js and service/main.js are intentionally committed for installation.

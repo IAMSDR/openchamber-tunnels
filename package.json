@@ -1,0 +1,36 @@
+{
+  "name": "openchamber-tunnels",
+  "version": "0.1.0",
+  "type": "module",
+  "license": "MIT",
+  "scripts": {
+    "build": "bunx openchamber-guest-bundle panel/main.ts panel/main.js && bunx openchamber-guest-bundle --node service/main.ts service/main.js",
+    "check": "bunx openchamber-guest-check",
+    "test": "bun test",
+    "typecheck": "tsc --noEmit"
+  },
+  "openchamber": {
+    "apiVersion": 1,
+    "engines": { "openchamber": ">=2.7.1" },
+    "id": "openchamber-tunnels",
+    "name": "Tunnels",
+    "icon": "links",
+    "contributes": {
+      "panel": { "entry": "panel/index.html" },
+      "statusSection": { "source": { "path": "/status", "interval": 5000 }, "title": "Tunnels" },
+      "service": {
+        "entry": "service/main.js",
+        "runtime": "host",
+        "keepRunning": true,
+        "permissions": { "exec": ["cloudflared", "devtunnel"] }
+      }
+    }
+  },
+  "devDependencies": {
+    "@types/bun": "latest",
+    "typescript": "^7"
+  },
+  "dependencies": {
+    "@openchamber/sdk": "2.7.1"
+  }
+}
