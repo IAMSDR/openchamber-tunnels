@@ -1,6 +1,8 @@
 # Tunnels for OpenChamber
 
-Manage local [Cloudflare Tunnel](https://developers.cloudflare.com/tunnel/) and [Microsoft Dev Tunnels](https://learn.microsoft.com/en-us/azure/developer/dev-tunnels/) from OpenChamber. Create and start tunnels in the Tunnels panel, and check their state and URLs in Work Status. This is an independent extension; Cloudflare and Microsoft are third-party providers.
+![Tunnels extension icon](icon.svg)
+
+Manage local [Cloudflare Tunnel](https://developers.cloudflare.com/tunnel/) and [Microsoft Dev Tunnels](https://learn.microsoft.com/en-us/azure/developer/dev-tunnels/) from OpenChamber. Create and start tunnels in the Tunnels panel on desktop or mobile, and check their state and URLs in Work Status. This is an independent extension; Cloudflare and Microsoft are third-party providers.
 
 ## Install
 
